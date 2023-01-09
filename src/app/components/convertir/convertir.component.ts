@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./convertir.component.css']
 })
 export class ConvertirComponent {
-  texto! : String;
+  texto! : string;
 }
