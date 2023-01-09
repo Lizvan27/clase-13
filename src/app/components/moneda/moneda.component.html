@@ -3,8 +3,8 @@
         <div>
             <h1>Moneda</h1>
             <div>
-                <label for="">Valor</label>
-                <input type="text">
+                <label for="" class="">Valor</label>
+                <input type="number" [(ngModel)]="valor">
             </div>
             <div>
                 <select name="" id="">
@@ -13,6 +13,9 @@
                     <option value="3">EUR</option>
                 </select>
             </div>
+
+            <p *ngIf="valor">{{valor | currency: "$"}}</p>
+            <p *ngIf="valor">{{valor | currency: "€"}}</p>
         </div>
     </div>
 </div>

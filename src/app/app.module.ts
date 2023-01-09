@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { ConvertirComponent } from './components/convertir/convertir.component';
 import { MonedaComponent } from './components/moneda/moneda.component';
 import { TexPipe } from './tex.pipe';
+import { ValorPipe } from './valor.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     ConvertirComponent,
     MonedaComponent,
-    TexPipe
+    TexPipe,
+    ValorPipe
   ],
   imports: [
     BrowserModule,
