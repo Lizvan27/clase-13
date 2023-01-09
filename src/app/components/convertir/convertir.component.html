@@ -1,0 +1,12 @@
+<div>
+    <div>
+        <div>
+            <h1>Ingrese texto</h1>
+            <div>
+                <label for="">Texto:</label>
+                <input type="text" [(ngModel)]="texto">
+                <p *ngIf="texto">{{texto | uppercase}}</p>
+            </div>
+        </div>
+    </div>
+</div>
